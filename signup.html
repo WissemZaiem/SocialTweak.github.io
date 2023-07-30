@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="icon" type="image/x-icon" href="images/des-lettres.png" />
+  </head>
+  <body>
+    <div class="logo"><a href="index.html">SocialTweak</a></div>
+    <div class="container">
+      <div class="box signin">
+        <h2>Already have an account ?</h2>
+        <button class="signinBtn">Sign in</button>
+      </div>
+
+      <div class="box signup">
+        <h2>Don't have an account ?</h2>
+        <button class="signupBtn">Sign up</button>
+      </div>
+
+      <div class="formBx">
+        <div class="form signinform">
+          <form id="loginForm">
+            <h3>Sign In</h3>
+            <input type="text" id="username" placeholder="Username" />
+            <input type="password" id="password" placeholder="Password" />
+            <input type="submit" value="Login" />
+            <a href="#" class="forgot">Forgot Password</a>
+          </form>
+        </div>
+        <div class="form signupform">
+          <form id="signupForm">
+            <h3>Sign Up</h3>
+            <input type="text" id="username1" placeholder="Username" />
+            <input type="email" id="email" placeholder="Email" />
+            <input type="password" id="password1" placeholder="Password" />
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Confirm Password"
+            />
+            <input type="submit" value="Register" />
+          </form>
+          <p id="successMessage" style="display: none; color: green">
+            Account successfully created
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>

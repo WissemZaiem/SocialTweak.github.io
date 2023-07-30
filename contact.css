@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+body {
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-info {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-right: 15%;
+}
+.card {
+ 
+  padding: 0 20px;
+  margin: 0 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  border: 1px solid blue;
+}
+.card-icon {
+  font-size: 28px;
+  background: blue;
+ 
+  color: white;
+  width: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+.card:hover .card-icon {
+  background: none;
+  transform: scale(1.6);
+  color: blue;
+ 
+}
+.card p {
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.card:hover p {
+  max-height: 40px;
+  opacity: 1;
+  color: blue;
+
+}
+.logo {
+  align-self: flex-start;
+  justify-self: flex-start;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 3%;
+  padding-left: 1%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+#mail-container{
+    
+    
+    word-wrap: break-word;
+  }
+
+@media screen and (max-width: 800px) {
+  .contact-info {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+  .logo {
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+ 
+  #mail-container{
+    width: 100%;
+  }
+  
+}
